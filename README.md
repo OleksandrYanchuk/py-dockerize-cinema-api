@@ -7,17 +7,14 @@ Install PostgresSQL and create db.
 ```
 git clone https://github.com/OleksandrYanchuk/py-dockerize-cinema-api.git
 cd py-dockerize-cinema-api
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
 mv .env.sample .env
 ```
 Place expected values of all variables into .env.sample:
 ```
 SECRET_KEY=SECRET_KEY
-POSTGRES_NAME=POSTGRES_NAME
-POSTGRES_USER=POSTGRES_USER
-POSTGRES_PASSWORD=POSTGRES_PASSWORD
+POSTGRES_NAME=postgres
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
 ```
 ## Run with Docker:
 ```
